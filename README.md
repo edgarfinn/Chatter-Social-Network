@@ -7,12 +7,12 @@ Users can publish messages to a personal timeline using the command:
 
   ```<username> -> <message>```
 
-  For example:
+For example:
 
-    ```
-    edgar -> Wow, amazing gig last night!
-    edgar -> I'll have to check out the new album!
-    ```
+  ```bash
+  edgar -> Wow, amazing gig last night!
+  edgar -> Ill have to check out the new album!
+  ```
 
   The first time a user posts a message, a profile is created automatically. All subsequent messages posted with that user's username are then saved to the same profile's timeline.
 
@@ -20,9 +20,9 @@ Users can publish messages to a personal timeline using the command:
 A user's timeline stores all messages posted by that user. Any user can view any other user's timeline simply by entering the username:
 
 ```bash
-<edgar>
+edgar
 // Wow, amazing gig last night!
-// I'll have to check out the new album!
+// Ill have to check out the new album!
 ```
 
 User stories:
