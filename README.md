@@ -9,9 +9,10 @@ Specific functions that user's can undertake.
 
   For example:
 
-    ```edgar -> Wow, amazing gig last night!```
-
-    ```edgar -> I'll have to check out the new album!```
+    ```
+    edgar -> Wow, amazing gig last night!
+    edgar -> I'll have to check out the new album!
+    ```
 
   The first time a user posts a message, a profile is created automatically. All subsequent messages posted with the that user's username are then saved to the same profile's timeline.
 
