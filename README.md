@@ -93,7 +93,7 @@ Command: ```<user name> follows <another user>```
 
 As a registered user, I can follow other users, so that my account's wall will stay up to date with the messages that they post to Chatter.
 
-#### Viewing your a user's wall
+#### Viewing a user's wall
 
 Command: ```<username> wall```
 
