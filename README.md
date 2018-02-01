@@ -3,7 +3,14 @@ A console-based social network application built using javascript.
 
 Chatter is a simple social network application built to work within the console. Mimicking the functions of Twitter, Chatter allows users to post messages, follow other users, and view all messages posted by a particular user.
 
-Specific functions that user's can undertake.
+### Installation instructions
+```bash
+$ git clone https://github.com/edgarfinn/Chatter-Social-Network.git
+$ cd Chatter-Social-Network
+$ npm install
+$ node chatter
+$ login
+```
 
 ### Posting messages
 You can post messages to a personal timeline using the command:
@@ -57,6 +64,13 @@ Chatter $: bridget wall
 // bridget - I've got a spare ticket for the theatre, any takers? (30 seconds ago)
 // edgar - We should do this more often! (8 minutes ago)
 // edgar - Wow, what an exciting week! (9 minutes ago)
+
+Chatter $: bridget follows john
+Chatter $: bridget wall
+// bridget - I've got a spare ticket for the theatre, any takers? (1 minute ago)
+// john - Cant believe I forgot my keys again! (7 minutes ago)
+// edgar - We should do this more often! (9 minutes ago)
+// edgar - Wow, what an exciting week! (10 minutes ago)
 ```
 
 ## User stories:
@@ -85,6 +99,29 @@ Command: ```<username> wall```
 
 - As either a registered user, I can view my profile's wall by entering my username followed by the command wall, so that I can view all messages that I have posted (in reverse chronological order) followed by all all messages posted by users that I follow (also in reverse chronological order).
 
+### Data structure plan:
+
+- userList
+  - Data-type: ```object```
+  - Description: contains all user objects.
+  - Keys:
+    - [user' username]: {user object}
+
+- user
+  - Data-type: ```object```
+  - Description: contains user profile information.
+  - Keys:
+    - "userName": "username string"
+    - "posts": [{array}, {of}, {post}, {objects}]
+    - "following": ["array", "of", "userName", "strings"]
+
+- post
+  - Data-type: ```object```.
+  - Description: contains data related to a specific post.
+  - Keys:
+    - "postedBy": "usernName string"
+    - "contents": "message string"
+    - datePosted: "ISO Date string" eg ```(YYYY-MM-DDTHH:MM:SSZ)```
 
 
 How it will be built:
