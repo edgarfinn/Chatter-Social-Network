@@ -59,7 +59,33 @@ Chatter $: bridget wall
 // edgar - Wow, what an exciting week! (9 minutes ago)
 ```
 
-User stories:
+## User stories:
+#### Posting messages
+
+Command: ```<username> -> <message>```
+
+- As a new user wanting to join Chatter, I can create a new account when I post my first message, by entering an unused username followed by a message, so that I can build a network of interactions with other Chatter users.
+
+- As a returning user, I can post subsequent messages to my profile's timeline by entering my username, so that I can build a chronologically ordered archive of messages for other Chatter users to see.
+
+#### Reading users' timelines
+Command: ```<username>```
+
+- As either a registered or unregistered user, I can view any existing user's timeline by typing their name in as a command, so that I can view all messages they have posted to Chatter in reverse-chronological order.
+
+#### Following users
+
+Command: ```<user name> follows <another user>```
+
+As a registered user, I can follow other users, so that my account's wall will stay up to date with the messages that they post to Chatter.
+
+#### Viewing your a user's wall
+
+Command: ```<username> wall```
+
+- As either a registered user, I can view my profile's wall by entering my username followed by the command wall, so that I can view all messages that I have posted (in reverse chronological order) followed by all all messages posted by users that I follow (also in reverse chronological order).
+
+
 
 How it will be built:
 - Technology
