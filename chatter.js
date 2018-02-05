@@ -1,8 +1,5 @@
 var app = require('vorpal')();
-
-function parseUserInput(command) {
-  console.log('parsing command:',command);
-}
+var parseUserInput = require('./modules/parseUserInput.js');
 
 app
   .mode('login')
