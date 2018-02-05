@@ -2,7 +2,7 @@ var app = require('vorpal')();
 var parseUserInput = require('./modules/parseUserInput.js');
 
 app
-  .mode('login')
+  .mode('sign in')
   .description('Begins interactive Chatter session')
   .delimiter('$: ')
   .action(function(command, callback) {

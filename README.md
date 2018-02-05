@@ -9,7 +9,7 @@ $ git clone https://github.com/edgarfinn/Chatter-Social-Network.git
 $ cd Chatter-Social-Network
 $ npm install
 $ npm start
-$ login
+$ sign in
 ```
 
 ### Posting messages
