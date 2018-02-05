@@ -1,4 +1,4 @@
-var userList = {
+module.exports = {
   "users": {
     "edgar": {
       "userName": "edgar",
@@ -39,5 +39,3 @@ var userList = {
     }
   }
 }
-
-module.exports = userList;
