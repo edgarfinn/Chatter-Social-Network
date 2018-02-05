@@ -1,0 +1,19 @@
+{
+  "name": "chatter-social-network",
+  "version": "1.0.0",
+  "description": "A console-based social network application built using javascript.",
+  "main": "chatter.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgarfinn/Chatter-Social-Network.git"
+  },
+  "author": "edgarfinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edgarfinn/Chatter-Social-Network/issues"
+  },
+  "homepage": "https://github.com/edgarfinn/Chatter-Social-Network#readme"
+}

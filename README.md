@@ -91,7 +91,7 @@ Command: ```<username>```
 
 Command: ```<user name> follows <another user>```
 
-As a registered user, I can follow other users, so that my account's wall will stay up to date with the messages that they post to Chatter.
+As a registered user, I can follow other users, so that I can stay updated with new messages posted by that user.
 
 #### Viewing a user's wall
 
