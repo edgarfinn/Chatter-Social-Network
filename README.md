@@ -8,7 +8,7 @@ Chatter is a simple social network application built to work within the console.
 $ git clone https://github.com/edgarfinn/Chatter-Social-Network.git
 $ cd Chatter-Social-Network
 $ npm install
-$ node chatter
+$ npm start
 $ login
 ```
 

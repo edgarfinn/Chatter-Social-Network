@@ -4,6 +4,7 @@
   "description": "A console-based social network application built using javascript.",
   "main": "chatter.js",
   "scripts": {
+    "start": "node chatter.js",
     "test": "jest"
   },
   "repository": {
