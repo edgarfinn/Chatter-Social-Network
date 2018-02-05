@@ -1,5 +1,4 @@
-module.exports = function identifyCommandType(command) {
-  var components = command.split(" ")
+module.exports = function identifyCommandType(components) {
   var instruction = components[1];
   if (components.length === 1) {
     return "read";
