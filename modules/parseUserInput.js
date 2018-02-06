@@ -2,6 +2,7 @@ var commandType = require('./IdentifyCommand/identifyCommand.js');
 var userExists = require('./UserExists/userExists.js');
 var userList = require('../Store/dataBase.js');
 var postMessage = require('./PostMessage/postMessage.js');
+var readPosts = require('./ReadPosts/readPosts.js');
 
 module.exports = function parseUserInput(command) {
   var components = command.split(" ");
@@ -9,7 +10,8 @@ module.exports = function parseUserInput(command) {
   var instruction = commandType(components);
 
   var action = {
-    "post": postMessage
+    "post": postMessage,
+    "read": readPosts
   }
 
   action[instruction](components)
