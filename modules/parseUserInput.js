@@ -3,6 +3,7 @@ var userExists = require('./UserExists/userExists.js');
 var userList = require('../Store/dataBase.js');
 var postMessage = require('./PostMessage/postMessage.js');
 var readPosts = require('./ReadPosts/readPosts.js');
+var followUser = require('./FollowUser/followUser.js');
 
 module.exports = function parseUserInput(command) {
   var components = command.split(" ");
