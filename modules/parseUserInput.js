@@ -4,6 +4,7 @@ var userList = require('../Store/dataBase.js');
 var postMessage = require('./PostMessage/postMessage.js');
 var readPosts = require('./ReadPosts/readPosts.js');
 var followUser = require('./FollowUser/followUser.js');
+var readWall = require('./ReadWall/readWall.js');
 
 module.exports = function parseUserInput(command) {
   var components = command.split(" ");
@@ -12,7 +13,9 @@ module.exports = function parseUserInput(command) {
 
   var action = {
     "post": postMessage,
-    "read": readPosts
+    "read": readPosts,
+    "follows": followUser,
+    "wall": readWall
   }
 
   action[instruction](components)
