@@ -2,6 +2,7 @@ var commandType = require('./IdentifyCommand/identifyCommand.js');
 var userExists = require('./UserExists/userExists.js');
 var userList = require('../Store/dataBase.js');
 var postMessage = require('./PostMessage/postMessage.js');
+var createNewUser = require('./CreateNewUser/createNewUser.js');
 var readPosts = require('./ReadPosts/readPosts.js');
 var followUser = require('./FollowUser/followUser.js');
 var readWall = require('./ReadWall/readWall.js');

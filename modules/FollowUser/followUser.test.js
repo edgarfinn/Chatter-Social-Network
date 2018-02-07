@@ -1,1 +1,0 @@
-var followUser = require('./followUser');

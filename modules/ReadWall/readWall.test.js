@@ -1,1 +1,0 @@
-var readWall = require('./readWall');
