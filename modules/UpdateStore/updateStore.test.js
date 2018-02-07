@@ -72,7 +72,7 @@ describe('updateStore', function() {
           return console.log('testReadError:',err);
         }
         var updatedStore = JSON.parse(data);
-        expect(updatedStore.users).not.toBeDefined();
+        expect(updatedStore.users).toBeDefined();
         done();
       })
     }
