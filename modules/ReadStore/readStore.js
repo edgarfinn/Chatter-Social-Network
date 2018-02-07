@@ -1,5 +1,5 @@
 var fs = require('fs');
 
 module.exports = function(filePath) {
-  return fs.readFileSync(file, 'utf-8');
+  return JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 }
