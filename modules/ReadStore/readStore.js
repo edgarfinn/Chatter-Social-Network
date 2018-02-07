@@ -1,5 +1,5 @@
 var fs = require('fs');
 
-module.exports = function(callback) {
-  return fs.readFileSync('Store/dataBase.js', 'utf-8');
+module.exports = function(filePath) {
+  return fs.readFileSync(file, 'utf-8');
 }
