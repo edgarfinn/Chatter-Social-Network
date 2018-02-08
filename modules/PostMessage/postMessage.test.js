@@ -1,6 +1,5 @@
 var postMessage = require('./postMessage');
 var readStore = require('../ReadStore/readStore');
-var createNewUser = require('../CreateNewUser/createNewUser');
 var emptyStore = require('../../Store/backup_dataBase');
 var resetTestStore = require('../UpdateStore/resetTestStore');
 var fs = require('fs');
