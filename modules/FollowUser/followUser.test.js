@@ -18,20 +18,20 @@ describe('user follows other users', function() {
   // });
 
   // creates a new user if user does not exist
-  test('first follow', function(done) {
-    function callback() {
-      fs.readFile(storeFilePath, 'utf-8', function(err, data) {
-        if (err) {
-          return console.log('testReadError:', err);
-        }
-        var updatedStore = JSON.parse(data);
-        var followArray = updatedStore.users.john.following;
-        expect(followArray[0]).toBe('edgar');
-        done();
-      })
-    }
-    followUser(follow1Components, storeFilePath, callback);
-  })
+  // test('first follow', function(done) {
+  //   function callback() {
+  //     fs.readFile(storeFilePath, 'utf-8', function(err, data) {
+  //       if (err) {
+  //         return console.log('testReadError:', err);
+  //       }
+  //       var updatedStore = JSON.parse(data);
+  //       var followArray = updatedStore.users.john.following;
+  //       expect(followArray[0]).toBe('edgar');
+  //       done();
+  //     })
+  //   }
+  //   followUser(follow1Components, storeFilePath, callback);
+  // })
 
 
 })
