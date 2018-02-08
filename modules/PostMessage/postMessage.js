@@ -5,7 +5,6 @@ var createNewUser = require('../CreateNewUser/createNewUser');
 var userExists = require('../UserExists/userExists');
 var updateStore = require('../UpdateStore/updateStore');
 
-
 // receives components array arg.
 module.exports = function(components) {
   var name = components[0];
@@ -15,7 +14,9 @@ module.exports = function(components) {
   var store = readStore(filePath);
 
   // create new user if they don't exist
-  var userList = userExists(name, store) ? store : createNewUser(name, store);
+  var userList = userExists(name, store)
+    ? store
+    : createNewUser(name, store);
 
   var newPost = {
     postedBy: name,
@@ -26,18 +27,16 @@ module.exports = function(components) {
   userList.users[name].posts.push(newPost);
 
   // update store with new post / user+post
-  updateStore(userList, filePath, function(err){
-    if(err) {
+  updateStore(userList, filePath, function(err) {
+    if (err) {
       return console.log('post error', err);
     }
-    if(postCallback) {
-      console.log('postMessage test callback');
+    // for asynchronous purposes of testing store updates
+    // tests are invoked by this callback, after store has updated
+    if (postCallback) {
       postCallback()
     }
   })
-
-  // console.log('>>>',store)
-  // console.log('filePath>>>', filePath);
 
   return;
 }
