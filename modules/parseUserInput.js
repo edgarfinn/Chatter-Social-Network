@@ -13,7 +13,7 @@ module.exports = function parseUserInput(command) {
 
   var action = {
     "post": postMessage,
-    "read": readPosts,
+    "read": readTimeline,
     "follows": followUser,
     "wall": readWall
   }
