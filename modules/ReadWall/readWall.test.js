@@ -4,8 +4,7 @@ var store = readStore('Test_Utilities/manyUsersFollowing.js');
 var testFilePath = 'Test_Utilities/manyUsersFollowing.js';
 
 var edgarWall = ['edgar', 'wall'];
-var johnWall = ['bridget', 'wall'];
-var bridgetWall = ['john', 'wall'];
+
 var edgarWallPosts = [
   {
     "postedBy": "edgar",
@@ -34,13 +33,8 @@ var edgarWallPosts = [
   }
 ]
 
-// followedPosts returns expected array of posts
 test('readWall returns all posts by user followed', function() {
   expect(readWall(edgarWall, testFilePath)).toEqual(
     expect.arrayContaining(edgarWallPosts)
   )
 })
-
-// followedPosts contains all posts by users followed users
-
-// all posts are prefixed with postedBy userName
