@@ -32,6 +32,6 @@ var fs = require('fs');
 //     }
 //     followUser(follow1Components, storeFilePath, callback);
 //   })
-
-
-})
+//
+//
+// })
