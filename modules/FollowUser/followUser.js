@@ -3,7 +3,6 @@ var readStore = require('../ReadStore/readStore');
 
 // receives components array as arg.
 module.exports = function(components) {
-  console.log('following User', components)
 
   var user = components[0];
   var followed = components[2];
@@ -12,7 +11,6 @@ module.exports = function(components) {
   var userList = readStore(filePath);
 
   // add new follow to user's following array
-  console.log('userList',userList);
   userList.users[user].following.push(followed);
 
   // updateStore with user's new follow
