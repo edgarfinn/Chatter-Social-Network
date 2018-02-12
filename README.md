@@ -137,6 +137,11 @@ Command: ```<username> wall```
     - "contents": "message string"
     - datePosted: "ISO Date string" eg ```(YYYY-MM-DDTHH:MM:SSZ)```
 
+### Architecture:
+
+The root entry point for the application is ```~chatter.js```. Once the application is running, this file receives all user interactions from the terminal.
+
+```Chatter.js``` once signed-in to interactive mode, all Chatter commands are passed directly into ```~modules/parseUserInput.js```, which acts as a sort of router, determining what action the application should take based on the user's command received from the terminal.
 
 ### Technology / Tools
   - [Vorpal:](http://vorpal.js.org/) a framework that helps to build immersive console applications with Javascript. This allows the application to run interactive sessions.
