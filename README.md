@@ -12,6 +12,16 @@ $ npm start
 $ sign in
 ```
 
+#### Why do I have to type ```sign in```?
+
+Chatter is an interactive application that can receive dynamically-defined commands (such as the [Read Timeline command, below](https://github.com/edgarfinn/Chatter-Social-Network#viewing-a-users-wall)). This is made possible using Vorpal.js' ```mode``` method, which requires, which requires the user to trigger this interactive mode once the application has started.
+
+#### Exiting the application.
+In order to exit the application, press ```ctrl``` + ```c``` twice.
+
+#### Hard reset
+Chatter is intended only to build on existing input. As such there is no current command to reset the users database. However, if - for any reason - you need to reset the app to blank, run the f
+
 ### Posting messages
 You can post messages to a personal timeline using the command:
 
@@ -27,7 +37,7 @@ Chatter $: john -> Cant believe I forgot my keys again!
 
   The first time a user posts a message, a profile is created automatically. All subsequent messages posted with that user's username are then saved to the same profile's timeline.
 
-### Viewing a user's timeline
+### Read a user's timeline
 Your timeline stores all messages you've posted. Any user can view any other user's timeline simply by entering the username:
 
 ```
@@ -45,7 +55,7 @@ You can follow other users so that their posts appear on your wall together with
 
 ```<username> follows <anotherUsername>```
 
-### Viewing your wall
+### Read your wall
 
 You can view all of your own messages, together with those of anyone you follow by checking your wall:
 
@@ -124,8 +134,7 @@ Command: ```<username> wall```
     - datePosted: "ISO Date string" eg ```(YYYY-MM-DDTHH:MM:SSZ)```
 
 
-How it will be built:
-- Technology
+### Technology / Tools
   - [Vorpal:](http://vorpal.js.org/) a framework that helps to build immersive console applications with Javascript. This allows the application to run interactive sessions.
 
   - [Jest:](https://facebook.github.io/jest/) a javascript testing framework built by facebook.
