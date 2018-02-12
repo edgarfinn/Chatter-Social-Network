@@ -26,6 +26,9 @@ Chatter is intended only to build on existing input. As such there is no current
 git checkout Store/dataBase.js
 ```
 
+#### Error handling
+Chatter currently only handles valid commands, and there is currently no input validation or user error handling. Therefore erroneous commands may crash the application. Any problems caused by erroneous user input can be resolved by resetting the application as outlined above.
+
 ### Posting messages
 You can post messages to a personal timeline using the command:
 
