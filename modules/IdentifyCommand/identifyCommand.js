@@ -1,5 +1,7 @@
 module.exports = function identifyCommandType(components) {
+
   var instruction = components[1];
+
   if (components.length === 1) {
     return "read";
   } else {
@@ -11,4 +13,5 @@ module.exports = function identifyCommandType(components) {
       break;
     }
   }
+  
 }

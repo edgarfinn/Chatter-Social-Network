@@ -20,7 +20,6 @@ describe('new user first post', function() {
     })
   });
 
-  // creates a new user if user does not exist
   test('creates new user', function(done) {
     function callback() {
       fs.readFile(storeFilePath, 'utf-8', function(err, data) {

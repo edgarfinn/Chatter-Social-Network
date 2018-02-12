@@ -1,6 +1,5 @@
 var prefixUsername = require('./prefixUsername');
 
-
 describe('prefixUsername',function() {
   var post = {
     "postedBy": "john",

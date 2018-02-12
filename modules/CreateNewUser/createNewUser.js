@@ -1,4 +1,5 @@
 module.exports = function(userName, currentUserList) {
+  
   var newUserList = JSON.parse(JSON.stringify(currentUserList));
 
   var user = {

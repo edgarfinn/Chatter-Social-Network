@@ -3,9 +3,6 @@ var updateStore = require('./updateStore');
 var resetTestStore = require('./resetTestStore');
 var backupStore = require('../../Store/backup_dataBase');
 
-/* =================================== */
-/* ========= CREATE NEW USER ========= */
-
 describe('updateStore', function() {
 
   var newStoreData = {
@@ -79,12 +76,3 @@ describe('updateStore', function() {
     updateStore(newStoreData, storeFilePath,callback);
   })
 })
-
-/* ======= END CREATE NEW USER ======= */
-/* =================================== */
-
-// adds to a user's posts array when invoked by post
-
-// adds to a user's follows array when invoked by follows
-
-// adds only a string to a user's follows array

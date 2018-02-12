@@ -26,5 +26,3 @@ describe('instruction is "wall"', function() {
     expect(identifyCommand(command)).toBe("wall")
   })
 })
-
-// should not mutate arguments

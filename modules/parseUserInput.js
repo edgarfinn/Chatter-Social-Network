@@ -20,7 +20,4 @@ module.exports = function parseUserInput(command) {
 
   action[instruction](components)
 
-
-  // console.log('users after post:',oldUsers);
-
 }

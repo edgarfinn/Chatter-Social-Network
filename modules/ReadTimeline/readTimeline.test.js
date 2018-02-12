@@ -10,7 +10,6 @@ var edgarPosts = store.users.edgar.posts;
 var johnPosts = store.users.john.posts;
 var bridgetPosts = store.users.bridget.posts;
 
-// returns array of a users timeLine posts as expected
 test('returns array of users posts', function() {
   expect(readTimeline(edgarCommand,testFilePath)).toEqual(edgarPosts)
   expect(readTimeline(johnCommand,testFilePath)).toEqual(johnPosts)
