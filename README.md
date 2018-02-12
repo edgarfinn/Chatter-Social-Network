@@ -14,13 +14,13 @@ $ sign in
 
 #### Why do I have to type ```sign in```?
 
-Chatter is an interactive application that can receive dynamically-defined commands (such as the [Read Timeline command, below](https://github.com/edgarfinn/Chatter-Social-Network#reading-users-timelines)). This is made possible using Vorpal.js' ```mode``` method, which requires, which requires the user to trigger this interactive mode once the application has started.
+Chatter is an interactive application that can receive dynamically-defined commands (such as the [Read Timeline command, below](https://github.com/edgarfinn/Chatter-Social-Network#reading-users-timelines)). This is made possible using Vorpal.js' ```mode``` method, which triggers an interactive session. The the ```sign in``` command is used to launch the interactive session for the user.
 
 #### Exiting the application.
 In order to exit the application, press ```ctrl``` + ```c``` twice.
 
 #### Hard reset
-Chatter is intended only to build on existing input. As such there is no current command to reset the users database. However, if - for any reason - you need to reset the app to blank, exit the application fully, and run the following command in your terminal from the root directory:
+Chatter is intended only to build on existing information. As such, there is no current command to reset the user database. However, if - for any reason - you need to reset the app to a blank default setting, exit the application fully, and run the following command in your terminal from the root directory:
 
 ```
 git checkout Store/dataBase.js
