@@ -20,7 +20,11 @@ Chatter is an interactive application that can receive dynamically-defined comma
 In order to exit the application, press ```ctrl``` + ```c``` twice.
 
 #### Hard reset
-Chatter is intended only to build on existing input. As such there is no current command to reset the users database. However, if - for any reason - you need to reset the app to blank, run the f
+Chatter is intended only to build on existing input. As such there is no current command to reset the users database. However, if - for any reason - you need to reset the app to blank, exit the application fully, and run the following command in your terminal from the root directory:
+
+```
+git checkout Store/dataBase.js
+```
 
 ### Posting messages
 You can post messages to a personal timeline using the command:
