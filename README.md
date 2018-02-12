@@ -152,5 +152,3 @@ The root entry point for the application is ```~chatter.js```. Once the applicat
   - [Jest:](https://facebook.github.io/jest/) a javascript testing framework built by facebook.
 
   - [Vanilla Node:](https://nodejs.org/en/) the biggest open-source library of packages in the world. Node provides a run-time environment for the app to function in, as well as native modules such as ```file system``` that provides capability to write information on to files.
-
-- How will the logic be structured?
