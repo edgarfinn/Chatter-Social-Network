@@ -14,7 +14,7 @@ $ sign in
 
 #### Why do I have to type ```sign in```?
 
-Chatter is an interactive application that can receive dynamically-defined commands (such as the [Read Timeline command, below](https://github.com/edgarfinn/Chatter-Social-Network#viewing-a-users-wall)). This is made possible using Vorpal.js' ```mode``` method, which requires, which requires the user to trigger this interactive mode once the application has started.
+Chatter is an interactive application that can receive dynamically-defined commands (such as the [Read Timeline command, below](https://github.com/edgarfinn/Chatter-Social-Network#reading-users-timelines)). This is made possible using Vorpal.js' ```mode``` method, which requires, which requires the user to trigger this interactive mode once the application has started.
 
 #### Exiting the application.
 In order to exit the application, press ```ctrl``` + ```c``` twice.
