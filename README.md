@@ -4,7 +4,7 @@ A console-based social network application built using javascript.
 Chatter is a simple social network application built to work within the console. Mimicking the functions of Twitter, Chatter allows users to post messages, follow other users, and view all messages posted by a particular user.
 
 ### Installation instructions
-```bash
+```
 $ git clone https://github.com/edgarfinn/Chatter-Social-Network.git
 $ cd Chatter-Social-Network
 $ npm install
